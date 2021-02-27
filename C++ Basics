@@ -1,0 +1,279 @@
+<html>
+
+    <head>
+        
+        <title>Basics</title>
+    
+        <style>
+
+ body {
+                
+                margin: 0;
+                padding: 0;
+                font-family: Helvetica, Arial, sans-serif;
+		padding-left: 15px;
+                
+            }
+
+  .topbar-section {
+                
+                float:left;
+                border-left: 1px #800000 solid;
+                height:100%;
+                
+            }
+
+            #signin-image {
+                
+                width:25px;
+                margin:11px 15px ;
+                float:left;
+                
+            }
+
+            #signin-text {
+                
+                font-weight: bold;
+                font-size:90%;
+                position:relative;
+                top:14px;
+                padding-right:50px;
+            }
+            
+            
+            #wigglyline {
+                
+                float:left;
+                height:40px;
+                
+            }      
+
+           #bell {
+                
+                height: 25px;
+                margin: 9px 8px 0 8px;
+                
+            }
+            
+            #bell-div {
+                
+                float:left;
+                
+            }
+
+           .topbar-menu {
+                
+                font-weight: bold;
+                font-size: 90%;
+                padding: 13px 15px 0 15px;
+                height:27px;
+                
+            }      
+
+            .clear {
+                
+                clear:both;
+                
+            }
+
+           #menu-bar-container {
+                
+                border-top: 1px solid #CCCCCC;
+                background-color: #BB1919;
+                width:100%;
+                height:70px;
+                
+            }
+            
+            #menu-bar {
+                
+                width:1000px;
+                margin:0 auto;
+                
+            }
+
+            h1 {
+                
+                padding:0;
+                margin:0;
+                color:white;
+                font-size: 40px;
+                font-weight: normal;
+                padding-top: 10px;
+                float:left;
+            }
+
+            #local-news {
+                
+                border: 1px #BB4545 solid;  
+                float:right;
+                width:250px;
+                padding: 5px 5px 0 10px;
+                margin: 5px 10px 0 0;
+                
+            }
+   #local-news a {
+                
+                color:white;
+                text-decoration: none;
+                font-size:30px;
+                position:relative;
+                top:-8px;
+                
+            }
+
+    #local-news a:hover {
+                
+                text-decoration: underline;
+                
+            }
+            
+            #local-news img {
+                
+                height:40px;
+                
+            }
+            
+            #menu-bar-2-container {
+                
+                background-color: #800000;
+                width: 100%;
+                
+            }
+         h2 {
+                
+                font-weight: normal;
+                margin-top:40px;
+                font-size:20px;
+                border-bottom: 2px solid #a91717;
+                width:105px;
+                
+            }
+            
+            h3 a {
+                
+                color:black;
+                font-size: 30px;
+                text-decoration: none;
+                
+            }
+            
+            h3 a:hover {
+                
+                color:#6495ED;
+                
+            }
+            
+    #article-summary {
+                
+                color: #5a5a5a;
+                
+            }
+         
+     body {background-color: #E0FFFF;}       
+                      
+</style>
+    
+    </head>
+
+    <body>
+    
+        <div class="clear"></div>
+        
+        <div id="menu-bar-container">
+            
+            <div id="menu-bar">
+            
+                <h1>C++ Basics</h1>
+                            
+            </div>
+            
+            </div>
+        
+        </div>
+        
+        <div class="clear"></div>
+        
+        <div id="page-container">
+        
+            <div id="main-article">
+                
+                <div id="article-container">
+<br>
+        
+                    
+
+                    <div id="article-summary">
+			<h3><u>Tokens</u></h3>
+
+                        <p> Tokens are the smallest individual unit of a program</p>
+			<p> Keywords, Identifiers, Constants, Strings, Special Symbols, and Operators are the tokens in C++</p>
+
+
+                    <br>
+		    <h3><u>Keywords</u></h3>
+		    
+			<p> Keywords are reserved words that have a special meaning associated with them</p>
+			<p>For example:
+			<ul>
+			   <li>int</li>
+			   <li>float</li>
+			   <li>short</li>
+			   <li>Protected</li>
+			   <li>union</li>
+			   <li>TRUE/FALSE</li>
+			</ul>
+			and so on</p>
+			<br>
+		<h3><u>Identifiers</h3></u>
+		<p>An identifier is nothing but a name assigned to an element in a program.</p>
+		<h4><u>Rules for naming identifiers</h4></u>
+		<ul>
+			<li>The first character of an identifier can only begin with a character or an underscore</li>
+			<li>An identifier cannot begin with a special character</li>
+			<li>A keyword cannot be an identifier</li>
+			<li>Leaving white spaces is discouraged - instead separate the words using an underscore</li>
+			<li>C++ is case sensitive - upper and lowecase letters are considered to be different</li>
+		</ul>		
+<br>
+		<h3><u>Constants</h3></u>
+		<p>Constants are fixed values that cannot change their value during the entire program as soon as we define them</p>
+		<h4><u>Types of constants in C++</h4></u>
+		<ul>
+			<li>Integer constants - 5, 6, 100, 60</li>
+			<li>Floating constants - 7.9, 7.0444, 4.09</li>
+			<li>Character constants - const char answer = 'y'</li>
+			<li>String constants - const char title[] = "HelloWorld"</li>
+		</ul>
+	<br>
+		<h3><u>Operators in C++</u></h3>
+		<p>Operators are tools or symbols which are used to perform a specific operation on data. Operations are performed on operands.</p>
+		<h4><u>Types of operators</h4></u>
+		<ol>
+			<li>Unary Operators -  It involves the use of one a single operand. e.g. '!' is a unary operator.</li><br>
+			<li>Binary Operators - It involves the use of two operands.</li><br>
+			<h5><u>Types of binary operators</h5></u>
+			<ul>
+				<li>Arithmetic</li>
+				<ol>
+					<li>Addition +</li>
+					<li>Subtraction -</li>
+					<li>Multiplication *</li>
+					<li>Division /</li>
+					<li>Modulus %</li>
+					<li>Increment ++</li>
+					<li>Decrement --</li>
+				</ol>
+				<li>Relational - e.g. ==, !=, >, <, >=, <=</li>
+				<li>Logical - e.g. &&, ||, !</li>
+				<li>Assignment - e.g. =, +=, -=, *=, /=, %=, &=, |=, ^=, >>=, <<=</li>
+				<li>Bitwise</li>
+				<li>Conditional</li>
+			</ul><br>
+			<li>Ternary Operators - It involves the use of three operands</li>
+			</ol>
+<br>
+
+<h4><a href="">Go To Homepage</a><br><br>
+<a href="">Go To Quiz 1</a></h4>
+</div>
