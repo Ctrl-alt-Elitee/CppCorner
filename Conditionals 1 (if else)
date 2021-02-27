@@ -1,0 +1,254 @@
+<html>
+
+    <head>
+        
+        <title>Conditionals (if-else)</title>
+    
+        <style>
+
+ body {
+                
+                margin: 0;
+                padding: 0;
+                font-family: Helvetica, Arial, sans-serif;
+		padding-left: 15px;
+                
+            }
+
+  .topbar-section {
+                
+                float:left;
+                border-left: 1px #800000 solid;
+                height:100%;
+                
+            }
+
+            #signin-image {
+                
+                width:25px;
+                margin:11px 15px ;
+                float:left;
+                
+            }
+
+            #signin-text {
+                
+                font-weight: bold;
+                font-size:90%;
+                position:relative;
+                top:14px;
+                padding-right:50px;
+            }
+            
+            
+            #wigglyline {
+                
+                float:left;
+                height:40px;
+                
+            }      
+
+           #bell {
+                
+                height: 25px;
+                margin: 9px 8px 0 8px;
+                
+            }
+            
+            #bell-div {
+                
+                float:left;
+                
+            }
+
+           .topbar-menu {
+                
+                font-weight: bold;
+                font-size: 90%;
+                padding: 13px 15px 0 15px;
+                height:27px;
+                
+            }      
+
+            .clear {
+                
+                clear:both;
+                
+            }
+
+           #menu-bar-container {
+                
+                border-top: 1px solid #CCCCCC;
+                background-color: #BB1919;
+                width:100%;
+                height:70px;
+                
+            }
+            
+            #menu-bar {
+                
+                width:1000px;
+                margin:0 auto;
+                
+            }
+
+            h1 {
+                
+                padding:0;
+                margin:0;
+                color:white;
+                font-size: 40px;
+                font-weight: normal;
+                padding-top: 10px;
+                float:left;
+            }
+
+            #local-news {
+                
+                border: 1px #BB4545 solid;  
+                float:right;
+                width:250px;
+                padding: 5px 5px 0 10px;
+                margin: 5px 10px 0 0;
+                
+            }
+   #local-news a {
+                
+                color:white;
+                text-decoration: none;
+                font-size:30px;
+                position:relative;
+                top:-8px;
+                
+            }
+
+    #local-news a:hover {
+                
+                text-decoration: underline;
+                
+            }
+            
+            #local-news img {
+                
+                height:40px;
+                
+            }
+            
+            #menu-bar-2-container {
+                
+                background-color: #800000;
+                width: 100%;
+                
+            }
+         h2 {
+                
+                font-weight: normal;
+                margin-top:40px;
+                font-size:20px;
+                border-bottom: 2px solid #a91717;
+                width:105px;
+                
+            }
+            
+            h3 a {
+                
+                color:black;
+                font-size: 30px;
+                text-decoration: none;
+                
+            }
+            
+            h3 a:hover {
+                
+                color:#6495ED;
+                
+            }
+            
+    #article-summary {
+                
+                color: #5a5a5a;
+                
+            }
+         
+     body {background-color: #E0FFFF;}       
+                      
+</style>
+    
+    </head>
+
+    <body>
+    
+        <div class="clear"></div>
+        
+        <div id="menu-bar-container">
+            
+            <div id="menu-bar">
+            
+                <h1>Conditionals (if-else)</h1>
+                            
+            </div>
+            
+            </div>
+        
+        </div>
+        
+        <div class="clear"></div>
+        
+        <div id="page-container">
+        
+            <div id="main-article">
+                
+                <div id="article-container">
+<br>
+                        
+                    <div id="article-summary">
+			<h3><u>if Statement</h3></u>
+			<p>The if statement is used to execute a block of code if the condition is true<br></p>
+			<p>Syntax:</p>
+			<b><i>if (condition) { <br>
+				// block of code to be executed if condition is true<br>}<br></b></i>
+
+<br>
+			<p>For example:</p>
+			if (10>5) {<br>cout << "10 is greater than 5"; <br>}<br><b>Output:</b><br>10 is greater than 5<br>
+			<p><b>Try it yourself!</b></p>int x=20;<br>int y=17;<br><b>// Print "Hello World" if x < y</b><br>
+
+<br>
+<h3><u>if else Statement</h3></u>
+<p>Use the else statement to specify a block of code to be executed if the condition is false.</p>
+<p>Syntax:</p><b><i>if (condition) {<br>
+  // block of code to be executed if the condition is true
+} else {<br>
+  // block of code to be executed if the condition is false<br>
+}<br></b></i><br>
+<p>For Example:</p>int time = 20;
+if (time < 18) {<br>
+  cout << "Good morning.";<br>
+} else {<br>
+  cout << "Good evening.";<br>
+}<br>
+<b>Output:</b><br>Good Evening<br>
+
+<h3><u>else if Statement</u></h3>
+<p>The else if statement is used to specify a new condition if the first condition is false</p>
+<p>Syntax:</p><b><i>if (condition1) {<br>
+  // block of code to be executed if condition1 is true<br>
+} else if (condition2) {<br>
+  // block of code to be executed if the condition1 is false and condition2 is true<br>
+} else {<br>
+  // block of code to be executed if the condition1 is false and condition2 is false<br>
+}<br></b></i>
+<p>For Example:</p>int time = 22;<br>
+if (time < 10) {<br>
+  cout << "Good morning.";<br>
+} else if (time < 20) {<br>
+  cout << "Good day.";<br>
+} else {<br>
+  cout << "Good evening.";<br>
+}<br>
+
+
+<h4><a href="">Go To Homepage</a><br><br>
+</div>
+</body>
+</html>
