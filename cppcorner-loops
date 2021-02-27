@@ -1,0 +1,153 @@
+<html>
+
+    <head>
+        
+        <title>cpp-corner</title>
+    
+        <link rel="stylesheet" type="text/css" href="">
+    
+    </head>
+
+    <body>
+    
+        <div class="clear"></div>
+        
+        <div id="menu-bar-container">
+            
+            <div id="menu-bar">
+            
+                <h1>CPP CORNER!</h1>
+                            
+            </div>
+            
+            <div class="clear"></div>
+            
+            <div id="menu-bar-2-container">
+            
+                <div id="menu-bar-2">
+                    
+                    <a href="">Basics</a>
+                    
+                    <a href="">Quiz 1</a>
+                    
+                    <a href="">Conditionals</a>
+                    
+                    <a href="">Quiz 2</a>
+                    
+                     <a href="">Loops</a>
+                     
+                     <a href="">Quiz 3</a>
+                    
+                     <a href="">Functions</a>
+                     
+                     <a href="">Quiz 4 </a>
+                    
+                     <a href="">Classes and objects</a>
+            
+                     <a href="">Quiz 5</a>
+                     <a href="">The Ultimate Quiz</a>
+                
+                </div>
+            
+            </div>
+        
+        </div>
+        
+        <div class="clear"></div>
+        
+        <div id="page-container">
+        
+            <div id="main-article">
+                
+                <div id="article-container">
+        
+                    <h2>Loops/Iteration statements</h2>
+
+                    <div id="article-summary">
+
+                        <p>The iteration statements allow a set of instructions to be performed repeatedly until a
+						certain condition is fulfilled. The iteration statements are also called loops or looping statements.</p>
+						<p>The four elements that are integral to loop control are:</p>
+						<ul>
+							
+						<li>test expression</li>
+
+						<li>body-of-the-loop</li>
+
+						<li>update expression()</li>
+						</ul>
+						<p>C++ provides three kinds of loops for loop, while loop, and do-while loop</p>
+					</div>
+					<div>
+						<ol>
+							<li>The for loop</li>
+							<p>The for loop is the easiest to understand of the C++ loops. All its loop-control elements are loop-control elements are gathered in one place (on the top of the loop), while in the other loop construction of C++, they are scattered about the program. The general form (syntax) of the for loop statement is</p>
+							<p><em><strong>for (Initialization expression(s); test-expression update expression(s))</strong></em></p>
+							<p><em><strong>&nbsp; &nbsp; loop statements;</strong></em></p>
+							<p>The three elements : initialization expression, test expression and update expression, generally govern the working of a loop and thus, are known as loop control elements.In a for loop, there can be multiple initialization and update expressions. But these multiple expressions must be separated by commas. There must be semicolons before and after test expression.
+							Also the three loop control elements are optional in a for loop but the 
+							two semicolons must appear even if any (or all of these expressions is missing)</p>
+							<p>The following example program may illustrate the use of for statement</p>
+							<p>Program using for loop to print numbers from 1 to 10.</p>
+
+							<p>#include &#60; iostream.h &#62; </p>
+							<p>void main ()</p>
+							<p>{</p>
+							<p>&nbsp; &nbsp;int i;</p>
+							<p>&nbsp; &nbsp;for(i=1;i &#60; = 10; i++)<p>
+							<p>&nbsp; &nbsp; {</p>
+							<p>&nbsp; &nbsp;&nbsp; &nbsp;cout &#60;&#60; " \t "<< i;</p>
+							<p>&nbsp; &nbsp; } </p>
+							<p> }</p>
+							<p>The output of the program would be:</p>
+							<p>&nbsp; &nbsp; &nbsp; &nbsp; 1 &nbsp; &nbsp; &nbsp; &nbsp; 2&nbsp; &nbsp; &nbsp; &nbsp;  3 &nbsp; &nbsp; &nbsp; &nbsp; 4 &nbsp; &nbsp; &nbsp; &nbsp; 5 &nbsp; &nbsp; &nbsp; &nbsp; 6 &nbsp; &nbsp; &nbsp; &nbsp; 7 &nbsp; &nbsp; &nbsp; &nbsp; 8 &nbsp; &nbsp; &nbsp; &nbsp; 9 &nbsp; &nbsp; &nbsp; &nbsp; 10</p>
+							<p>The above program prints first 10 natural numbers i.e., values from 1 to 10. The variable is initialised with value 1 (initialisation expression :i=1); as long as the value of i is less than or equal to 10 <em>(test expression : i &#60; = 10 )</em>the loop prints the value of i on the same line and at the end of each iteration, the value of i is incremented by 1 (update expression ++i )</p>
+							<p>The three elements : initialization expression, test expression and update expression,generally govern the working of a loop and thus, are known as loop control elements.</p>
+							<p>In a for loop, there can be multiple initialization and update expressions. But these multiple expressions must be separated by commas. There must be semicolon before and
+							after test-expression. Also, the three loop control elements are optional in a for loop but the
+							two semicolons must appear even if any (or all) of these expression is missing </p>
+							<hr>
+							<li>The while loop</li>
+							<p>The second loop available in C++ is the while loop The while loop is an entry-controlled loop. The syntax of a while loop is:</p>
+							<p><em><strong>while(expression)</strong></em></p>
+							<p><em><strong>&nbsp; &nbsp; loop statements;</strong></em></p>
+							<p> where the loop body may contain a single statement, a compound statement or an empty statement. The loop iterates <em> while</em> the <em>expression</em> evaluates to true. When the <em>expression</em> becomes false, the program control passes to the line after the loop-body code.</p>
+							<p>In a while loop, a loop control variable should be initialised before the loop begins a an uninitialised variable can be used in an expression. The loop variable should be updated inside the body of the while. Following example program illustrates the working of while loop.</p>
+							<p>#include &#60; iostream.h &#62; </p>
+							<p>void main ()</p>
+							<p>{</p>
+							<p>&nbsp; &nbsp;int i = 1;</p>
+							<p>&nbsp; &nbsp;while(i &#60; = 10)<p>
+							<p>&nbsp; &nbsp; {</p>
+							<p>&nbsp; &nbsp;&nbsp; &nbsp;cout &#60;&#60; " \t "&#60;&#60; i;</p>
+							<p>&nbsp; &nbsp;&nbsp; &nbsp;i++;</p>
+							<p>&nbsp; &nbsp; } </p>
+							<p> }</p>
+							<p>The output of the program would be:</p>
+							<p>&nbsp; &nbsp; &nbsp; &nbsp; 1 &nbsp; &nbsp; &nbsp; &nbsp; 2&nbsp; &nbsp; &nbsp; &nbsp;  3 &nbsp; &nbsp; &nbsp; &nbsp; 4 &nbsp; &nbsp; &nbsp; &nbsp; 5 &nbsp; &nbsp; &nbsp; &nbsp; 6 &nbsp; &nbsp; &nbsp; &nbsp; 7 &nbsp; &nbsp; &nbsp; &nbsp; 8 &nbsp; &nbsp; &nbsp; &nbsp; 9 &nbsp; &nbsp; &nbsp; &nbsp; 10</p>
+							<p>The above program prints first 10 natural numbers i.e., values from 1 to 10. The variable is initialised with value 1 outside the loop.As long as the value of i is less than or equal to 10 <em>(test expression : i &#60; = 10 )</em>the loop prints the value of i on the same line and the value of i is incremented by 1 inside the loop.</p>
+							<p>The test expression is evaluated at the end of every iteration.If the test expression turns out to be true,the loop is repeated otherwise terminated.</p>
+							<p>The for and while loops are <strong>entry-controlled</strong> loops, i.e, there is control over entry in them.Then <strong>test-expression</strong> is evaluated before entering into the loop,if it evaluates to true,the loop is executed otherwise the loop is terminated.</p>
+							<hr>
+							<li>The do-while loop</li>
+							<p>Unlike the <strong>for</strong> and <strong>while</strong> loops,the <strong>do-while</strong> is an <strong>exit controlled</strong> loop i.e, it evaluates its <em>test-expression</em> at the bottomo of the loop after executing its loop-body statements.This means that a <strong>do-while</strong> loop always executes at least once,even when the test expression evaluates to <em>false</em> initially.</p>
+							<p>In the other two loops for and while, the test-expression is evaluated at the beginning of the loop i.e., before executing the loop-body. If the test-expression evaluates to false for the first time itself, the loop is never executed. But in some situations, it is wanted that the loop-body is executed at least once, no matter what the initial state of the test-expression is. In such cases, the do-while loop is the obvious choice.The syntax of a while loop is:</p>
+							<p><em><strong>do</strong></em></p>
+							<p>&nbsp; &nbsp; {</p>
+							<p><em><strong>&nbsp; &nbsp;&nbsp; &nbsp; loop statements;</strong></em></p>
+							<p>&nbsp; &nbsp; }</p>
+							<p><em><strong>while(test-expression);</strong></em></p>
+							<p> The braces {} are not necessary when the loop-body contains a single statement. The following do-while loop prints all upper-case letters:</p>
+							<p>char ch='A' </p>
+							<p>do</p>
+							<p>{</p>
+							<p>&nbsp; &nbsp;cout &#60;&#60; " \n "&#60;&#60;ch;</p>
+							<p>&nbsp; &nbsp;ch++<p>
+							<p> } while(ch&#60;='Z');</p>
+							<p>The above loop prints characters from 'A' onwards until the condition ch&#60; ='Z' becomes false</p>
+							<p>The most common use of the do-while loop is in menu selection routine, where the menu is flashed at least once. Then depending upon the user's response it is either repeated or terminated.</p>
+							<hr>
+						</ol>
+					</div>
+	</body>
+</html>
