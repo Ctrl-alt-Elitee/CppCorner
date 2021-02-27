@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>C++ Quiz 4</title>
+			<style>
+			body {
+			background-color: lightblue;
+			font-family: Helvetica;
+			}
+
+			#main {
+			width: 80%;
+			max-width: 950px;
+			border: 1px gray solid;
+			margin: auto;
+			padding: 10px;
+			background-color: white;
+			border-radius: 10px;
+			}
+
+			#header {
+			margin-top: 0;
+			border: 2px solid black;
+			padding: 5px;
+			height: 250px;
+			background: beige;
+			background-image: url("https://images.unsplash.com/photo-1542831371-29b0f74f9713?ixid=MXwxMjA3fDB8MHxzZWFyY2h8Mnx8Y29kaW5nfGVufDB8fDB8&ixlib=rb-1.2.1&w=1000&q=80");
+			color: white;
+			}
+
+			label {
+			display: block;
+			}
+
+			input {
+			width: 30px;
+			margin-left: 20px;
+			}
+
+			h2 {
+			clear: both;
+			padding-top: 20px;
+			}
+
+			button {
+			width: 100px;
+			margin-top: 20px;
+			}
+
+			h1 {text-align: center;}
+
+			</style>
+
+
+		</head>
+	<body>
+		<div id="main">
+		<div id="header">
+		<h1>C++ Quiz 4</h1>
+		</div>
+		<form id="form1">
+
+		<h2>Which of the following describes a function?</h2>
+		<label for="cat_string"><input type="radio" name="con" value="0" id="cat_string" />A command with which you can display text on the screen</label>
+		<label for="cat_join"><input type="radio" name="con" value="0" id="cat_join" />Something which tells you whether you have access to a specific variable</label>
+		<label for="cat_info"><input type="radio" name="con" value="25" id="cat_info" />A set of statements which carries out a particular task.</label>
+		<label for="cat_condition"><input type="radio" name="con" value="0" id="cat_condition" />Your cousin's wedding</label>
+
+		<h2>What is the right syntax for a function definition?</h2>
+		<label for="if_string"><input type="radio" name="ifstate" value="0" id="if_string" />def func_name (parameter(s))</label>
+		<label for="if_join"><input type="radio" name="ifstate" value="0" id="if_join" />fn func_name(parameter(s))</label>
+		<label for="if_info"><input type="radio" name="ifstate" value="0" id="if_info" /> function func_name(parameter(s))</label>
+		<label for="if_condition"><input type="radio" name="ifstate"  value="25" id="if_condition" />type function-name (parameter list)</label>
+
+		<h2>Which line has an error in the following code snippet?</h2>
+		<p>void double1(int a)</p>
+		<p>{</p>
+		<p>&nbsp;&nbsp;return (a*2);</p>
+		<p>}</p>
+		<p>void main()</p>
+		<p>{</p>
+		<p>&nbsp; &nbsp;int d1,a1=7</p>
+		<p>&nbsp;&nbsp; d1=double(a1);</p>
+		<p>&nbsp;&nbsp;cout &#60;&#60; d1;</p>
+		<p>}</p>
+		<label for="com_string"><input type="radio" name="com" value="0" id="com_string" />d1=double(a1);</label>
+		<label for="com_join"><input type="radio" name="com" value="25" id="com_join" />void double1(int a)</label>
+		<label for="com_info"><input type="radio" name="com" value="0" id="com_info" />void main()</label>
+		<label for="com_condition"><input type="radio" name="com" value="0" id="com_condition" />return a*2;</label>
+
+		<h2>Which of the following statements is correct?</h2>
+		<label for="out_string"><input type="radio" name="out" value="0" id="out_string" />When values are passed by reference,the formal parameters store copies of the actual parameters.</label>
+		<label for="out_join"><input type="radio" name="out" value="0" id="out_join" />Functions cannot return values.</label>
+		<label for="out_info"><input type="radio" name="out" value="25" id="out_info" />When a function is called by reference, then, the formal parameters become aliases to the actual parameters in the calling function.</label>
+		<label for="out_condition"><input type="radio" name="out" value="0" id="out_condition" />Functions can be used in a program without defining them.</label>
+
+		<button type="submit" value="Submit">Submit</button>
+
+		</form>
+			
+		<p>Your grade is: <span id="grade">__</span></p>
+		<p id="grade2"></p>
+
+
+
+		<script>
+		document.getElementById("form1").onsubmit=function() {
+			   con = parseInt(document.querySelector('input[name = "con"]:checked').value);
+			   ifstate = parseInt(document.querySelector('input[name = "ifstate"]:checked').value);
+			   com = parseInt(document.querySelector('input[name = "com"]:checked').value);
+			   out = parseInt(document.querySelector('input[name = "out"]:checked').value);
+			   
+			   result = con + ifstate + com + out;
+			   
+			document.getElementById("grade").innerHTML = result;
+
+		 grading = [
+			   {score:0,feedback:"I don't think you understood.This meme definetly applies to you.", image: "https://i.zoomtventertainment.com/media/pic_23.PNG"},
+			   {score:25,feedback:"You need to spend more time. Try again", image: "https://assetsds.cdnedge.bluemix.net/sites/default/files/styles/very_big_1/public/feature/images/the_average_story_of_the_average_0.jpg?itok=TOkp1bIn"},
+			   {score:50,feedback:"I think you could do better. Try again.", image: "https://lh3.googleusercontent.com/proxy/xBBpXZNva-wSCDlQeLHX7LSN_Q-Do42p4VxKa5hLlf73TRI9wVzQOOISX0jXlUTNZcAMbE7wpVdA5Q-H9jBmvQMmpUS66Hr8UI18MA"},
+			   {score:75,feedback:"So close. Try again.", image: "https://i.pinimg.com/originals/f8/de/ef/f8deef878867dee11b7a15a0a55765b4.jpg"},
+			   {score:100,feedback:"Excellent! You've mastered loops!", image: "https://pbs.twimg.com/profile_images/784387853467824128/r0kVwS6N_400x400.jpg"}
+			   ];
+			  
+		for(i=0; i<grading.length; i++) {
+			if(result == grading[i].score) {
+			result2 = grading[i].feedback + "<br /><img src='" + grading[i].image + "' width='300'  />";
+			  }
+			  }
+
+
+		document.getElementById("grade2").innerHTML = result2; 
+
+		return false; 
+		}
+
+		</script>
+
+
+		</div>
+		<a href="">Back To The Homepage</a>
+		</body>
+</html>
