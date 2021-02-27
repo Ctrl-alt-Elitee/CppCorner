@@ -1,0 +1,141 @@
+ <html>
+
+    <head>
+        
+        <title>cpp-corner</title>
+    
+        <link rel="stylesheet" type="text/css" href="">
+    
+    </head>
+
+    <body>
+    
+        <div class="clear"></div>
+        
+        <div id="menu-bar-container">
+            
+            <div id="menu-bar">
+            
+                <h1>CPP CORNER!</h1>
+                            
+            </div>
+            
+            <div class="clear"></div>
+            
+            <div id="menu-bar-2-container">
+            
+                <div id="menu-bar-2">
+                    
+                    <a href="">Basics</a>
+					
+					<a href="">Basics continued</a>
+                    
+                    <a href="">Quiz 1</a>
+                    
+                    <a href="">Conditionals</a>
+                    
+                    <a href="">Quiz 2</a>
+                    
+                     <a href="">Loops</a>
+                     
+                     <a href="">Quiz 3</a>
+                    
+                     <a href="">Functions</a>
+                     
+                     <a href="">Quiz 4 </a>
+                    
+                     <a href="">Classes and objects</a>
+            
+                     <a href="">Quiz 5</a>
+                     <a href="">The Ultimate Quiz</a>
+                
+                </div>
+            
+            </div>
+        
+        </div>
+        
+        <div class="clear"></div>
+                
+        
+                    <h2>Classes and Objects</h2>       
+                        <p>The most important features of C++ are the classes and objects. Their significance is highlighted by the fact that the C++'s originator, Stroustrup, gave the name "C with classes to this language initially. The class is a single most important C++ feature that implements OOP concepts and ties them together.The prerequisites for classes and objects are:the structures and the functions.A 'C' type structure provides a way to group data elements and a function organizes program actions into a named entity. Classes put these ideas together by combining related data and associated functions under one roof</p>
+						<h3>Classes</h3>	
+						<p>A class represents a group of similar objects. A class is a way to bind the data describing an entity and its associated functions together.</p>
+	                    <p>For instance, consider an account having characteristics <em>account no, type,</em> and <em>balance</em>. Its associated operations are <strong>deposit</strong> and <strong>withdrawal</strong>.</p>
+						<p>We can define its class as follows:</p>		
+						<p>class Account { int accountno;</p>
+						<p>&nbsp; &nbsp; char type;</p>
+						<p>&nbsp; &nbsp; float balance;</p>
+						<p>&nbsp; &nbsp; float deposit(float amount)</p>
+						<p>&nbsp; &nbsp;{</p>
+						<p>&nbsp; &nbsp;&nbsp; &nbsp;balance += amount; </p>
+						<p>&nbsp; &nbsp;&nbsp; &nbsp;return balance;</p>
+						<p>&nbsp; &nbsp;}</p>
+						<p>float withdraw(float amount)</p>
+						<p>&nbsp; &nbsp;{</p>
+						<p>&nbsp; &nbsp;&nbsp; &nbsp;balance -= amount;</p>
+						<p>&nbsp; &nbsp;&nbsp; &nbsp;return balance;</p>
+						<p>&nbsp; &nbsp;}</p>
+						<p>}</p>
+						<p>See the data describing an account (ie, account no, type & balance) and associated operations (deposit and withdraw) are bound together under name <strong>Account</strong>. This <strong>Account</strong> makes a class. Now instances of the class <strong>Account</strong> can be created.<p>
+						<p>Note:An instance, in object-oriented programming (OOP), is a specific realization of any object. An object may be varied in a number of ways. Each realized variation of that object is an instance.</p>
+						<h3>Declaration of classes</h3>
+						<p>The declaration of a class involves declaration of its four associated attributes:</p>
+						<ol>
+							<li>Data members</li>
+							<p>Data members are the data-type properties that describe the characteristics of a class. There may be zero or more data members of any type in a class.</p>
+							<li>Member Functions</li>
+							<p>Member Functions are the set of operations that may be applied to objects of that class. There may be zero or more member functions for a class. They are referred to as the class interface.</p>
+							<li>Program Access Levels that .control access to members from within the
+							program. These access levels are private, protected, or public. Depending upon the access level of a class member, access to it is allowed or denied.</li>
+							<li>Class Tagname that serves as a type specifier for the class using which objects of this class type can be created.</li>
+							<h3>The class definition</h3>
+							<p>The general form of a class definition is as given:</p>
+							<p><strong>class</strong> class-name{</p>
+							<p>&nbsp; &nbsp;<strong>private:</strong></p>
+							<p>&nbsp; &nbsp;&nbsp; &nbsp;[variable declarations;]</p>
+							<p>&nbsp; &nbsp;&nbsp; &nbsp;[function declarations;]</p>
+							<p>&nbsp; &nbsp;<strong>public:</strong></p>
+							<p>&nbsp; &nbsp;&nbsp; &nbsp;[variable declarations;]</p>
+							<p>&nbsp; &nbsp;&nbsp; &nbsp;[function declarations;]</p>
+							<p>};</p>
+							<p>Where the keyword <em>class</em> specifies that it is a class;<em>class-name</em> is the tagname of the class that acts as a <em>type specifier</em> for it,using which objects of this class type can be created.The braces {,and } surround the body of the class.</p>
+							<p>The class body contains the declaration of its members(data and functions).There are generally two types of members in a class: <strong>private</strong> and <strong>public</strong> which are grouped under two sections namely <strong>private:</strong> and <strong>public:</strong>.</p>
+							<p>The <strong>private</strong> members can be accessed only from within the class and the <strong>public</strong> members can be accessed from outside the class also.If no label is specified,then by default,<strong>the members are private.</strong></p>
+							<h3>Using objects</h3>
+							<p>When you define a class,it does not define or create objects of that class,rather it only specifies what type of information the objects of this class type will be containing.Once a class has been defined,its objects(the variables of this class type;its instances)can be created like any other variable,using the class name as type specifier as it is shown below:</p>
+							<p><em>class-name object-list(comma separated);</em></p>
+							<p>For instance,consider the following code segment:</p>
+							<p>class Item {</p>
+							<p>&nbsp;&nbsp; public:</p>
+							<p>&nbsp;&nbsp;&nbsp;&nbsp;int itemno;</p>
+							<p>&nbsp;&nbsp;&nbsp;&nbsp;float price;</p>
+							<p>&nbsp;&nbsp;&nbsp;&nbsp;void getdata(int i,float f){</p>
+							<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;itemno=i;</p>
+							<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;price=j;</p>
+							<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}</p>
+							<p>&nbsp;&nbsp;&nbsp;&nbsp;void putdata(){</p>
+							<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;cout&#60;&#60"Items:"&#60;&#60; itemno&#60;&#60;endl;</p>
+							<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;cout&#60;&#60"Price:"&#60;&#60; price&#60;&#60;endl;</p>
+							<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}</p>
+							<p>&nbsp;&nbsp;};</p>
+							<p>Item s1,s2; //This creates objects of Item type and reserves memory space for s1 and s2. </p>
+							<p>void main(){</p>
+							<p>&nbsp;&nbsp; s1.getdata(1001,17.50);</p>
+							<p>&nbsp;&nbsp; s2.getdata(1002,29.00);</p>
+							<p>}</p>
+							<p>In the above code fragment,after defining the class <strong>Item</strong>, the statement</p>
+							<p>Item s1,s2;</p>
+							<p>creates two objects <strong>s1</strong> and <strong>s2</strong> of type <strong>Item</strong> in the memory,i.e, reserves memory for these two objects.Then in the function main(),the statements</p>
+							<p>s1.getdata(1001,17.50)</p>
+							<p>s2.getdata(1002,29.00)</p>
+							<p>invoke the member function <strong>getdata()</strong> for objects <strong>s1</strong> and <strong>s2</strong> respectively with data 1001 and 17.5 for <strong>s1</strong> and 1002 and 29.00 for <strong>s2</strong>.</p>
+							<p>After these statements,the <strong>getdata()</strong> function stores given values in the object s1 and s2.To acces <strong>itemno</strong> of the objects,we should use:</p>
+							<p>s1.itemno; or</p>
+							<p>s2.itemno;</p>
+							<p>(the same applies for any member of the class)</p>
+						</ol>
+						
+	</body>
+</html>
