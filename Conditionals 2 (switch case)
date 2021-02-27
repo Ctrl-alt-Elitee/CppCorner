@@ -1,0 +1,263 @@
+<html>
+
+    <head>
+        
+        <title>Conditionals (switch case)</title>
+    
+        <style>
+
+ body {
+                
+                margin: 0;
+                padding: 0;
+                font-family: Helvetica, Arial, sans-serif;
+		padding-left: 15px;
+                
+            }
+
+  .topbar-section {
+                
+                float:left;
+                border-left: 1px #800000 solid;
+                height:100%;
+                
+            }
+
+            #signin-image {
+                
+                width:25px;
+                margin:11px 15px ;
+                float:left;
+                
+            }
+
+            #signin-text {
+                
+                font-weight: bold;
+                font-size:90%;
+                position:relative;
+                top:14px;
+                padding-right:50px;
+            }
+            
+            
+            #wigglyline {
+                
+                float:left;
+                height:40px;
+                
+            }      
+
+           #bell {
+                
+                height: 25px;
+                margin: 9px 8px 0 8px;
+                
+            }
+            
+            #bell-div {
+                
+                float:left;
+                
+            }
+
+           .topbar-menu {
+                
+                font-weight: bold;
+                font-size: 90%;
+                padding: 13px 15px 0 15px;
+                height:27px;
+                
+            }      
+
+            .clear {
+                
+                clear:both;
+                
+            }
+
+           #menu-bar-container {
+                
+                border-top: 1px solid #CCCCCC;
+                background-color: #BB1919;
+                width:100%;
+                height:70px;
+                
+            }
+            
+            #menu-bar {
+                
+                width:1000px;
+                margin:0 auto;
+                
+            }
+
+            h1 {
+                
+                padding:0;
+                margin:0;
+                color:white;
+                font-size: 40px;
+                font-weight: normal;
+                padding-top: 10px;
+                float:left;
+            }
+
+            #local-news {
+                
+                border: 1px #BB4545 solid;  
+                float:right;
+                width:250px;
+                padding: 5px 5px 0 10px;
+                margin: 5px 10px 0 0;
+                
+            }
+   #local-news a {
+                
+                color:white;
+                text-decoration: none;
+                font-size:30px;
+                position:relative;
+                top:-8px;
+                
+            }
+
+    #local-news a:hover {
+                
+                text-decoration: underline;
+                
+            }
+            
+            #local-news img {
+                
+                height:40px;
+                
+            }
+            
+            #menu-bar-2-container {
+                
+                background-color: #800000;
+                width: 100%;
+                
+            }
+         h2 {
+                
+                font-weight: normal;
+                margin-top:40px;
+                font-size:20px;
+                border-bottom: 2px solid #a91717;
+                width:105px;
+                
+            }
+            
+            h3 a {
+                
+                color:black;
+                font-size: 30px;
+                text-decoration: none;
+                
+            }
+            
+            h3 a:hover {
+                
+                color:#6495ED;
+                
+            }
+            
+    #article-summary {
+                
+                color: #5a5a5a;
+                
+            }
+         
+     body {background-color: #E0FFFF;}       
+                      
+</style>
+    
+    </head>
+
+    <body>
+    
+        <div class="clear"></div>
+        
+        <div id="menu-bar-container">
+            
+            <div id="menu-bar">
+            
+                <h1>Conditionals (switch case)</h1>
+                            
+            </div>
+            
+            </div>
+        
+        </div>
+        
+        <div class="clear"></div>
+        
+        <div id="page-container">
+        
+            <div id="main-article">
+                
+                <div id="article-container">
+<br>
+                        
+                    <div id="article-summary">
+
+<h3><u>Switch Statements</h3></u>
+<p>The switch statement is used to select one code block to execute from a large number of code blocks</p>
+<p>Syntax:</p><b><i>switch(expression) {<br>
+  case x:<br>
+    // code block<br>
+    break;<br>
+  case y:<br>
+    // code block<br>
+    break;<br>
+  default:<br>
+    // code block<br>
+}</b></i><br><br>
+<u>break Keyword</u>
+<p>C++ breaks out of the switch block when it reaches a break keyword</p>
+<u>default keyword</u>
+<p>The code inside the default code block will run if no match can be found</p>
+<p>For Example:</p>int day = 4;<br>
+switch (day) {<br>
+  case 6:<br>
+    cout << "Today is Saturday";<br>
+    break;<br>
+  case 7:<br>
+    cout << "Today is Sunday";<br>
+    break;<br>
+  default:<br>
+    cout << "Looking forward to the Weekend";<br>
+}<br><b>Output:</b><br>Looking forward to the Weekend<br>
+
+<p>Example 2:</p>int day = 4;<br>
+switch (day) {<br>
+  case 1:<br>
+    cout << "Monday";<br>
+    break;<br>
+  case 2:<br>
+    cout << "Tuesday";<br>
+    break;<br>
+  case 3:<br>
+    cout << "Wednesday";<br>
+    break;<br>
+  case 4:<br>
+    cout << "Thursday";<br>
+    break;<br>
+  case 5:<br>
+    cout << "Friday";<br>
+    break;<br>
+  case 6:<br>
+    cout << "Saturday";<br>
+    break;<br>
+  case 7:<br>
+    cout << "Sunday";<br>
+    break;<br>
+}<br><b>Output:</b><br>Thursday<br>
+
+<h4><a href="">Go To Quiz 2</a><br>
+<h4><a href="">Go To Homepage</a>
+</div>
+</body>
+</html>
