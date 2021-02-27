@@ -1,0 +1,132 @@
+ <html>
+
+    <head>
+        
+        <title>cpp-corner</title>
+    
+        <link rel="stylesheet" type="text/css" href="">
+    
+    </head>
+
+    <body>
+    
+        <div class="clear"></div>
+        
+        <div id="menu-bar-container">
+            
+            <div id="menu-bar">
+            
+                <h1>CPP CORNER!</h1>
+                            
+            </div>
+            
+            <div class="clear"></div>
+            
+            <div id="menu-bar-2-container">
+            
+                <div id="menu-bar-2">
+                    
+                    <a href="">Basics</a>
+					
+					<a href="">Basics continued</a>
+                    
+                    <a href="">Quiz 1</a>
+                    
+                    <a href="">Conditionals</a>
+                    
+                    <a href="">Quiz 2</a>
+                    
+                     <a href="">Loops</a>
+                     
+                     <a href="">Quiz 3</a>
+                    
+                     <a href="">Functions</a>
+                     
+                     <a href="">Quiz 4 </a>
+                    
+                     <a href="">Classes and objects</a>
+            
+                     <a href="">Quiz 5</a>
+                     <a href="">The Ultimate Quiz</a>
+                
+                </div>
+            
+            </div>
+        
+        </div>
+        
+        <div class="clear"></div>
+                
+        
+                    <h2>Functions</h2>
+
+       
+                        <p>A function is a subpart of a program which can be reused as and when required. Functions are the building blocks of C++ and the place where all program activity occurs. They are one of C++'s most important features.</p>
+						<h3>Function definition</h3>	
+						<p>In C++, a function must be defined before it is used anywhere in the program. The general form of a function definition is as given below</p>
+	                    <p>type function-name (parameter list) </p>
+						<p>{ body of the function }</p>		
+						<p>If no type is specified, the compiler assumes that the function returns an integer value. The paramete list is a comma-separated list of variables of a function referred to as its arguments. A function may be without any parameters, in which case, the <em>parameter list</em> is empty.</p>
+						<p>Here is an example of function:</p>
+						<p>void absval(int a)</p>
+						<p>&nbsp; &nbsp; {</p>
+						<p>&nbsp; &nbsp; if(a&#60; 0)</p>
+						<p>&nbsp; &nbsp;&nbsp; &nbsp; cout &#60;&#60; -a; </p>
+						<p>&nbsp; &nbsp; else</p>
+						<p>&nbsp; &nbsp;&nbsp; &nbsp; cout &#60;&#60; a; </p>
+						<p>&nbsp; &nbsp; }</p>
+						<p>From the above example, it is clear now that the parameter declaration list for a function takes this general form: </p>
+						<p>function-name (type varnamel, type varname2, ...., type varnamen)</p>
+						<p>The prototype declaration looks just like a function definition except that it has no body i.e., its code is missing. Empty parenthesis in a function declaration means that the function is without parameters i.e., parameter list is empty.</p>
+						<p>The above given example is of function definition, and the following are examples of declarations:</p>
+						<p>int absval(int a);</p><p>int gcd(int n, int n2);<p>
+						<p>A definition is automatically also a declaration C++ makes prototyping essential i.e, for a function, its prototype must be provided before its use. However, if the called function definition appears before its calling function's definition then the called function's prototype may be skipped because a definition itself is a declaration i.e, prototype of a function.</p>
+						<h3>Invoking a function:</h3>
+						<p>C++ supports invoking functions in two ways:</p>
+						<ul>
+							<li>Call by value</li>
+							<li>Call by reference</li>
+						</ul>
+						<ol>
+							<li>Call by value</li>
+							<p>The call by value method copies the values of actual parameters into the formal parameters, that is the function creates its own copy of argument values and then uses them.</p>
+							
+							<p>The main benefit of call by value method is that you cannot alter the variables that are used to call the function because any change that occurs inside function is on the function's
+
+							copy of the argument value. The original copy of the argument value remains intact. Even
+
+							if the names of actual and formal parameters are the same, separate copy of values is
+
+							created by the called function for its use. Following program illustrates the working of
+
+							call-by value method.<p>
+							<p>int cube(int a)</p>
+							<p>{</p>
+							<p>&nbsp;&nbsp;return a*a*a;</p>
+							<p>}</p>
+							<p>void main()</p>
+							<p>{</p>
+							<p>&nbsp; &nbsp;int vol,side=7</p>
+							<p>&nbsp;&nbsp; vol=cube(side);</p>
+							<p>&nbsp;&nbsp;cout &#60;&#60; vol;</p>
+							
+							<li>Call by reference</li>
+							<p>The call by reference method uses a different mechanism. In place of passing a value to the function being called, a reference to the original variable is passed. Remember that a reference is an alias (i.e, a different name) for a predefined variable. That is the same variable's value can be accessed by any of the two names: the original variable's name and the reference name.</p>
+							<p>When a function is called by reference, then, the formal parameters become refer(or aliases) to the actual parameters in the calling function. This means that in the reference method, the called function does not create its own copy of original values rather, it refers to the original values only by different names ie, the references, This called function works with the original data and any change in the values gets reflected to the data.</p>
+							<p>void change(int &#38; a )</p>
+							<p>{</p>
+							<p>&nbsp; &nbsp;a=20;</p>
+							<p>&nbsp; &nbsp;cout &#60;&#60;&#34; Value of orig in func change()=&#34;&#60;&#60;a&#60;&#60;endl;</p>
+							<p>}</p>
+							<p>void main()</p>
+							<p>{</p>
+							<p>&nbsp; &nbsp;int orig=10;</p>
+							<p>&nbsp;&nbsp;cout &#60;&#60; "The original value is:"&#60;&#60;orig&#60;&#60;endl;</p>
+							<p>&nbsp;&nbsp; change(orig);</p>
+							<p>&nbsp;&nbsp;cout &#60;&#60; "The value after change() is over:"&#60;&#60;orig&#60;&#60;endl;</p>
+							<p>}</p>
+							<p>In the above program change() refers to original value orig which is (10) by its reference a. That is same memory location is being referred to as orig by main() and as a by change(). So the change in a (to 20) is done in the same location as that of orig's and hence, this change is reflected back to main(). Thus, the above output is produced.</p>
+						</ol>
+						
+	</body>
+</html>
