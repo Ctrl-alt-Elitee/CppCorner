@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>C++ Quiz 4</title>
+<title>C++ Quiz 5</title>
 <style>
 body {
 background-color: lightblue;
@@ -56,7 +56,7 @@ h1 {text-align: center;}
 <body>
 <div id="main">
 <div id="header">
-<h1>C++ Quiz 4</h1>
+<h1>C++ Quiz 5</h1>
 </div>
 <form id="form1">
 
@@ -78,11 +78,11 @@ h1 {text-align: center;}
 <label for="com_info"><input type="radio" name="com" value="25" id="com_info" />Protected</label>
 <label for="com_condition"><input type="radio" name="com" value="0" id="com_condition" />Break</label>
 
-<h2>Which of the following statements is incorrect?</h2>
-<label for="out_string"><input type="radio" name="out" value="0" id="out_string" />Destructor of base class should always be static</label>
-<label for="out_join"><input type="radio" name="out" value="25" id="out_join" />Destructor of base class should always be virtual.</label>
-<label for="out_info"><input type="radio" name="out" value="0" id="out_info" />Destructor of base class should not be virtual.</label>
-<label for="out_condition"><input type="radio" name="out" value="0" id="out_condition" />Destructor of base class should always be private.</label>
+<h2>Which of the following statements is correct?</h2>
+<label for="out_string"><input type="radio" name="out" value="0" id="out_string" />private and public members can be accessed outside the class</label>
+<label for="out_join"><input type="radio" name="out" value="25" id="out_join" />Only public members can be accessed outside the class.</label>
+<label for="out_info"><input type="radio" name="out" value="0" id="out_info" />Only private members can be accessed outside the class.</label>
+<label for="out_condition"><input type="radio" name="out" value="0" id="out_condition" />neither public nor private members can be accessed outside the class.</label>
 
 <button type="submit" value="Submit">Submit</button>
 
