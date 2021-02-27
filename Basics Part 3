@@ -1,0 +1,266 @@
+<html>
+
+    <head>
+        
+        <title>Basics Continued</title>
+    
+        <style>
+
+ body {
+                
+                margin: 0;
+                padding: 0;
+                font-family: Helvetica, Arial, sans-serif;
+		padding-left: 15px;
+                
+            }
+
+  .topbar-section {
+                
+                float:left;
+                border-left: 1px #800000 solid;
+                height:100%;
+                
+            }
+
+            #signin-image {
+                
+                width:25px;
+                margin:11px 15px ;
+                float:left;
+                
+            }
+
+            #signin-text {
+                
+                font-weight: bold;
+                font-size:90%;
+                position:relative;
+                top:14px;
+                padding-right:50px;
+            }
+            
+            
+            #wigglyline {
+                
+                float:left;
+                height:40px;
+                
+            }      
+
+           #bell {
+                
+                height: 25px;
+                margin: 9px 8px 0 8px;
+                
+            }
+            
+            #bell-div {
+                
+                float:left;
+                
+            }
+
+           .topbar-menu {
+                
+                font-weight: bold;
+                font-size: 90%;
+                padding: 13px 15px 0 15px;
+                height:27px;
+                
+            }      
+.tab {
+    display: inline-block;
+    margin-left: 40px;
+}
+
+            .clear {
+                
+                clear:both;
+                
+            }
+
+           #menu-bar-container {
+                
+                border-top: 1px solid #CCCCCC;
+                background-color: #BB1919;
+                width:100%;
+                height:70px;
+                
+            }
+            
+            #menu-bar {
+                
+                width:1000px;
+                margin:0 auto;
+                
+            }
+
+            h1 {
+                
+                padding:0;
+                margin:0;
+                color:white;
+                font-size: 40px;
+                font-weight: normal;
+                padding-top: 10px;
+                float:left;
+            }
+
+            #local-news {
+                
+                border: 1px #BB4545 solid;  
+                float:right;
+                width:250px;
+                padding: 5px 5px 0 10px;
+                margin: 5px 10px 0 0;
+                
+            }
+   #local-news a {
+                
+                color:white;
+                text-decoration: none;
+                font-size:30px;
+                position:relative;
+                top:-8px;
+                
+            }
+
+    #local-news a:hover {
+                
+                text-decoration: underline;
+                
+            }
+            
+            #local-news img {
+                
+                height:40px;
+                
+            }
+            
+            #menu-bar-2-container {
+                
+                background-color: #800000;
+                width: 100%;
+                
+            }
+         h2 {
+                
+                font-weight: normal;
+                margin-top:40px;
+                font-size:20px;
+                border-bottom: 2px solid #a91717;
+                width:105px;
+                
+            }
+            
+            h3 a {
+                
+                color:black;
+                font-size: 30px;
+                text-decoration: none;
+                
+            }
+            
+            h3 a:hover {
+                
+                color:#6495ED;
+                
+            }
+            
+    #article-summary {
+                
+                color: #5a5a5a;
+                
+            }
+         
+     body {background-color: #E0FFFF;}       
+                      
+</style>
+    
+    </head>
+
+    <body>
+    
+        <div class="clear"></div>
+        
+        <div id="menu-bar-container">
+            
+            <div id="menu-bar">
+            
+                <h1>Basics Continued</h1>
+                            
+            </div>
+            
+            </div>
+        
+        </div>
+        
+        <div class="clear"></div>
+        
+        <div id="page-container">
+        
+            <div id="main-article">
+                
+                <div id="article-container">
+<br>
+        
+                    
+
+                    <div id="article-summary">
+
+<h3><u>Escape Sequences</h3></u>
+<p>An escape sequence consists of two or more characters. For all sequences, the first character will be ”\” i.e. backslash. The other characters determine the interpretation of escape sequence.</p>
+<p>Some important escape sequences:</p>
+<ul>
+<li>New line (\n) - When a new line is necessary in the output</li>
+<li>Tab (\t) - A TAB is equal to eight spaces.  This escape sequence performs the functionality of TAB key in the output stream.</li>
+<li>Backspace (\b) - We use this escape sequence whenever we want to delete a single character</li>
+</ul>
+<br>
+<h3><u>Data Types</h3></u>
+<p>Data types are used to tell the variables the type of data it can store.</p>
+<p>Data types in C++:</p>
+<ol>
+<li>Primary Data Types:</li>
+	<ul>
+	<li>Integer</li>
+	<li>Character</li>
+	<li>Boolean</li>
+	<li>Floating Point</li>
+	<li>Double Floating Point</li>
+	<li>Void</li>
+ 	<li>Wide Character</li>
+	</ul>
+<li>Derived Data Types:</li>
+	<ul>
+	<li>Function</li>
+	<li>Array</li>
+	<li>Pointer</li>
+	<li>Reference</li>
+	</ul>
+<li>User Defined Data Types:</li>
+	<ul>
+	<li>Class</li>
+	<li>Structure</li>
+	<li>Union</li>
+	<li>Enum</li>
+	<li>Typedef</li>
+</ol>
+<br>
+
+<h3><u>Type Casting</u></h3>
+<p>A type cast is a conversion from one data type to another.<br>There are two methods:<br>
+<ol>
+<li><u>Implicit Type Conversion - </u><br>Done by the compiler on its own, without any external trigger from the user.<br>
+Generally takes place when in an expression more than one data type is present. <br>In such condition type conversion (type promotion) takes place to avoid loss of data.<br>
+All the data types of the variables are upgraded to the data type of the variable with largest data type. </li>
+<li><u>Explicit Type Conversion - </u><br> This process is also called type casting and it is user-defined.<br>Here the user can typecast the result to make it of a particular data type.
+<br>For Example:<br>int sum = (int)2.4 + 1<br>cout << sum<br>
+<b>Output:</b><br>
+3<br>
+</div>
+<a href="">Go To Quiz 1</a></h4><br><br>
+<a href="">Go To Homepage</a></h4>
+</body>
+</html>
