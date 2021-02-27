@@ -1,0 +1,274 @@
+<html>
+
+    <head>
+        
+        <title>Basics Continued</title>
+    
+        <style>
+
+ body {
+                
+                margin: 0;
+                padding: 0;
+                font-family: Helvetica, Arial, sans-serif;
+		padding-left: 15px;
+                
+            }
+
+  .topbar-section {
+                
+                float:left;
+                border-left: 1px #800000 solid;
+                height:100%;
+                
+            }
+
+            #signin-image {
+                
+                width:25px;
+                margin:11px 15px ;
+                float:left;
+                
+            }
+
+            #signin-text {
+                
+                font-weight: bold;
+                font-size:90%;
+                position:relative;
+                top:14px;
+                padding-right:50px;
+            }
+            
+            
+            #wigglyline {
+                
+                float:left;
+                height:40px;
+                
+            }      
+
+           #bell {
+                
+                height: 25px;
+                margin: 9px 8px 0 8px;
+                
+            }
+            
+            #bell-div {
+                
+                float:left;
+                
+            }
+
+           .topbar-menu {
+                
+                font-weight: bold;
+                font-size: 90%;
+                padding: 13px 15px 0 15px;
+                height:27px;
+                
+            }      
+.tab {
+    display: inline-block;
+    margin-left: 40px;
+}
+
+            .clear {
+                
+                clear:both;
+                
+            }
+
+           #menu-bar-container {
+                
+                border-top: 1px solid #CCCCCC;
+                background-color: #BB1919;
+                width:100%;
+                height:70px;
+                
+            }
+            
+            #menu-bar {
+                
+                width:1000px;
+                margin:0 auto;
+                
+            }
+
+            h1 {
+                
+                padding:0;
+                margin:0;
+                color:white;
+                font-size: 40px;
+                font-weight: normal;
+                padding-top: 10px;
+                float:left;
+            }
+
+            #local-news {
+                
+                border: 1px #BB4545 solid;  
+                float:right;
+                width:250px;
+                padding: 5px 5px 0 10px;
+                margin: 5px 10px 0 0;
+                
+            }
+   #local-news a {
+                
+                color:white;
+                text-decoration: none;
+                font-size:30px;
+                position:relative;
+                top:-8px;
+                
+            }
+
+    #local-news a:hover {
+                
+                text-decoration: underline;
+                
+            }
+            
+            #local-news img {
+                
+                height:40px;
+                
+            }
+            
+            #menu-bar-2-container {
+                
+                background-color: #800000;
+                width: 100%;
+                
+            }
+         h2 {
+                
+                font-weight: normal;
+                margin-top:40px;
+                font-size:20px;
+                border-bottom: 2px solid #a91717;
+                width:105px;
+                
+            }
+            
+            h3 a {
+                
+                color:black;
+                font-size: 30px;
+                text-decoration: none;
+                
+            }
+            
+            h3 a:hover {
+                
+                color:#6495ED;
+                
+            }
+            
+    #article-summary {
+                
+                color: #5a5a5a;
+                
+            }
+         
+     body {background-color: #E0FFFF;}       
+                      
+</style>
+    
+    </head>
+
+    <body>
+    
+        <div class="clear"></div>
+        
+        <div id="menu-bar-container">
+            
+            <div id="menu-bar">
+            
+                <h1>Basics Continued</h1>
+                            
+            </div>
+            
+            </div>
+        
+        </div>
+        
+        <div class="clear"></div>
+        
+        <div id="page-container">
+        
+            <div id="main-article">
+                
+                <div id="article-container">
+<br>
+        
+                    
+
+                    <div id="article-summary">
+			<h3><u>#include directive</u></h3>
+			<p><b>#include</b> is a way of including a standard or user-defined file in the program and is mostly written at the beginning of any C/C++ program.</p>
+			<p>These files are mainly imported from an outside source into the current program. The process of importing such files that might be system-defined or user-defined is known as File Inclusion.</p>
+			<p>For example: <b><i>#include < iostream ></b></i><br>'iostream' is a header file which contains C++ function declaration definitions. Functions like cout, cin, and various other input/output functions are contained within different header files</p>
+			<p>e.g. <b><i>#include "user defined file"</b></i><br>User defined files resemble header files, except for the fact that they are written by the user itself. Once a user defined file is written, it can be imported anywhere in the program using the <b>#include</b> preprocessor.</p>
+
+<br>
+
+			<h3><u>Input and Output</h3></u>
+<ol>
+			<li><p><b><u><h4>Standard output stream (cout):</b></u></h4> It is used to produce output on the standard output device which is usually the display screen. The data needed to be displayed on the screen is inserted in the standard output stream (cout) using the insertion operator(<<).</p></li>
+			<p><u>Sample code:</p></u>
+			<p>#include < iostream ><br>
+				using namespace std;<br>
+					int main()<br>{<br>
+						char welcome[] = "Hello World";<br>
+					        cout << welcome <<<br>
+						return 0;
+<br>}<br>
+<b>Output:</b> <br> Hello World<br></p>
+<li><b><u><h4><p>Standard input stream (cin):</b></u></h4> The extraction operator(>>) is used along with the object cin for reading inputs. The extraction operator extracts the data from the object cin which is entered using the keyboard.</p></li>
+<u><p>Sample code:</p></u>
+<p>#include < iostream ><br>using namespace std;<br>
+int main()<br>{<br>int age;<br>cout << "Enter your age";<br>
+cin >> age;<br>cout << "Your age is: "<< age<br>return 0<br>}<br>
+<b>Output:</b>
+Enter your age: <br>25<br>Your age is: 25<br></p>
+</ol>
+<br>
+<h3><u>Main Function</h3></u>
+<p>void main() is the main function that is the entry point for execution in a C++ program><br>'void' represents that the function will not return any value.</p>
+<br>
+<h3><u>Standard End Line</h3></u>
+<p>'endl' is a predefined object of ostream class.<br>
+It is used to insert a new line character and flushes the stream</p>
+<p><u>Syntax:</u><br>
+#include < iostream ><br>
+using namespace std;<br>
+int main()<br>{<br>
+cout << "Welcome";<br>
+cout << "To C++"<< endl; <br>
+cout << "End of line"<< endl;<br>
+}<br>
+<b>Output:</b><br>
+Welcome To C++<br>End of line<br>
+
+<br>
+
+<h3><u>Comments in C++</h3></u>
+<p>Types of comments in C++: </p>
+<ol>
+<li>Single line comments: <br>
+Single-line comments, start with // and continue until the end of the line.<br>
+For example, cout<< "Hello World" //This statement prints a string
+</li>
+<li>Multi line comments:<br>
+Multi line comments start with /* and end with */.<br> They usually span for multiple lines.<br>
+For example: /* This program prints "Hello World"
+<br>and uses the cout function to do the same */<br></li>
+</ol>
+<br>
+<a href="">Go To Next Part</a></h4>
+
+</div>
