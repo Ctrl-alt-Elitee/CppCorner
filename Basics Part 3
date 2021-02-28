@@ -136,32 +136,32 @@
             
                 <div id="menu-bar-2">
                     
-                    <a href="">Basics</a>
+                                     <a href="Basics1.html">Basics</a>
 					
-					<a href="">Basics II</a>
+					<a href="Basics2.html">Basics II</a>
 					
-					<a href="">Basics III</a>
+					<a href="Basics3.html">Basics III</a>
                     
-                    <a href="">Quiz 1</a>
+                    <a href="Quiz1.html">Quiz 1</a>
                     
-                    <a href="">Conditionals I</a>
+                    <a href="Conditionals.html">Conditionals I</a>
                     
-					 <a href="">Conditionals II</a>
+					 <a href="Conditionals2.html">Conditionals II</a>
 					
-                    <a href="">Quiz 2</a>
+                    <a href="Quiz2.html">Quiz 2</a>
                     
-                     <a href="">Loops</a>
+                     <a href="loops.html">Loops</a>
                      
-                     <a href="">Quiz 3</a>
+                     <a href="Quiz3.html">Quiz 3</a>
                     
-                     <a href="">Functions</a>
+                     <a href="functions.html">Functions</a>
                      
-                     <a href="">Quiz 4 </a>
+                     <a href="Quiz4.html">Quiz 4 </a>
                     
-                     <a href="">Classes and objects</a>
+                     <a href="ClassesAndObjects.html">Classes and objects</a>
             
-                     <a href="">Quiz 5</a>
-                     <a href="">Ultimate Quiz</a>
+                     <a href="Quiz5.html">Quiz 5</a>
+                     <a href="UltimateQuiz.html">Ultimate Quiz</a>
                 
                 </div>
             
@@ -223,7 +223,7 @@ All the data types of the variables are upgraded to the data type of the variabl
 <b>Output:</b><br>
 3<br>
 </div>
-<a href="">Go To Quiz 1</a></h4><br><br>
-<a href="">Go To Homepage</a></h4>
+<a href="Quiz1.html">Go To Quiz 1</a></h4><br><br>
+<a href="Cpp-cornerHome">Go To Homepage</a></h4>
 </body>
 </html>
