@@ -138,30 +138,32 @@
                     
                     <a href="">Basics</a>
 					
-					<a href="">Basics II</a>
+                                     <a href="Basics1.html">Basics</a>
 					
-					<a href="">Basics III</a>
-                    
-                    <a href="">Quiz 1</a>
-                    
-                    <a href="">Conditionals I</a>
-                    
-					 <a href="">Conditionals II</a>
+					<a href="Basics2.html">Basics II</a>
 					
-                    <a href="">Quiz 2</a>
+					<a href="Basics3.html">Basics III</a>
                     
-                     <a href="">Loops</a>
+                    <a href="Quiz1.html">Quiz 1</a>
+                    
+                    <a href="Conditionals.html">Conditionals I</a>
+                    
+					 <a href="Conditionals2.html">Conditionals II</a>
+					
+                    <a href="Quiz2.html">Quiz 2</a>
+                    
+                     <a href="loops.html">Loops</a>
                      
-                     <a href="">Quiz 3</a>
+                     <a href="Quiz3.html">Quiz 3</a>
                     
-                     <a href="">Functions</a>
+                     <a href="functions.html">Functions</a>
                      
-                     <a href="">Quiz 4 </a>
+                     <a href="Quiz4.html">Quiz 4 </a>
                     
-                     <a href="">Classes and objects</a>
+                     <a href="ClassesAndObjects.html">Classes and objects</a>
             
-                     <a href="">Quiz 5</a>
-                     <a href="">Ultimate Quiz</a>
+                     <a href="Quiz5.html">Quiz 5</a>
+                     <a href="UltimateQuiz.html">Ultimate Quiz</a>
                 
                 </div>
             
@@ -241,8 +243,8 @@
 							<p>}</p>
 							<p>In the above program change() refers to original value orig which is (10) by its reference a. That is same memory location is being referred to as orig by main() and as a by change(). So the change in a (to 20) is done in the same location as that of orig's and hence, this change is reflected back to main(). Thus, the above output is produced.</p>
 						</ol>
-				<h4><a href="">Go To Quiz 4</a><br>
-<h4><a href="">Go To Homepage</a>
+				<h4><a href="Quiz4.html">Go To Quiz 4</a><br>
+<h4><a href="Cpp-cornerHome.html">Go To Homepage</a>
 				</div>		
 	</body>
 </html>
