@@ -117,7 +117,7 @@ document.getElementById("form1").onsubmit=function() {
  grading = [
 	   {score:0,feedback:"I don't think you understood.This meme definetly applies to you.", image: "https://i.zoomtventertainment.com/media/pic_23.PNG"},
 	   {score:25,feedback:"You need to spend more time. Try again", image: "https://assetsds.cdnedge.bluemix.net/sites/default/files/styles/very_big_1/public/feature/images/the_average_story_of_the_average_0.jpg?itok=TOkp1bIn"},
-	   {score:50,feedback:"I think you could do better. Try again.", image: "https://lh3.googleusercontent.com/proxy/xBBpXZNva-wSCDlQeLHX7LSN_Q-Do42p4VxKa5hLlf73TRI9wVzQOOISX0jXlUTNZcAMbE7wpVdA5Q-H9jBmvQMmpUS66Hr8UI18MA"},
+	 {score:50,feedback:"I think you could do better. Try again."},
 	   {score:75,feedback:"So close. Try again.", image: "https://i.pinimg.com/originals/f8/de/ef/f8deef878867dee11b7a15a0a55765b4.jpg"},
 	   {score:100,feedback:"Excellent! You've mastered loops!", image: "https://pbs.twimg.com/profile_images/784387853467824128/r0kVwS6N_400x400.jpg"}
 	   ];
